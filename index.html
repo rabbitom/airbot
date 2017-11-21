@@ -11,7 +11,11 @@
     <meta name="format-detection" content="telephone=no">
     <link rel="stylesheet" href="assets/download.css">
     <script type="text/javascript" charset="utf-8">
-        startTime = new Date();
+        var url = window.location.href;
+
+        function download() {
+            window.location.href = url;
+        }
     </script>
     <title>佳佳机器人 - APP下载</title>
     <link rel="apple-touch-icon" href="http://firicon.fir.im/94e0b079a0d61d372396574403da001fe26dd1ad?e=1511249864&amp;token=LOvmia8oXF4xnLh0IdH05XMYpH6ENHNpARlmPc-T:7qp8JW7OTI8Uxu9dIOTXwHMur6c=">
@@ -53,7 +57,7 @@
                             </h1>
                             <p class="scan-tips">扫描二维码下载<br>或用手机浏览器输入这个网址:&nbsp;&nbsp;<span class="text-black">http://erabbit.net/airbot/download</span></p>
                             <div id="actions" class="actions type-ios">
-                                <button onclick="FIR.install()">下载安装</button>
+                                <button onclick="download();">下载安装</button>
                             </div>
                         </div>
                     </div>
