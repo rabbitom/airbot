@@ -13,10 +13,11 @@
     <link rel="stylesheet" href="assets/wechat_mask.css">
     <script type="text/javascript" src="assets/wechat_mask.js"></script>
     <script type="text/javascript" charset="utf-8">
-        var url = window.location.href;
+        var android_url = 'http://a.app.qq.com/o/simple.jsp?pkgname=com.jiaqi789.phonejakiaircleaner';
+        var ios_url = 'https://itunes.apple.com/us/app/佳佳机器人/id1250366985?l=zh&ls=1&mt=8';
 
         function download() {
-            window.location.href = url;
+            window.location.href = (navigator.userAgent.indexOf('iPhone') > -1) ? ios_url : android_url;
         }
     </script>
     <title>佳佳机器人 - APP下载</title>
@@ -68,9 +69,9 @@
             <div class="footer">Copyright © 2017 <a href="http://jiaqi789.com/">广东佳奇科技教育股份有限公司</a> All Rights Reserved</div>
         </div>
     </div>
-    <div id="mask"></div>
-    <div id="top" class="topright">
-        <font size="2em" color="#ffffff">请在系统自带的浏览器中打开页面&nbsp;</font><img src="assets/arrow.png" />
+    <div id="mask" class="mask"></div>
+    <div id="prompt" class="prompt">
+        <font size="2em" color="#ffffff">请在<span id="system-browser">系统自带的浏览器</span>中打开页面&nbsp;</font><img class="arrow" src="assets/arrow.png" />
     </div>
 </body>
 

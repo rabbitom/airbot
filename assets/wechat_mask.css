@@ -1,4 +1,4 @@
-#mask {
+.mask {
     display: none;
     position: absolute;
     top: 0%;
@@ -12,18 +12,19 @@
     filter: alpha(opacity=70);
 }
 
-#top {
+.prompt {
     display: none;
-    z-index: 102
-}
-
-.topright {
+    z-index: 102;
     position: absolute;
     top: 0;
     right: 0;
 }
 
-.topright img {
+.arrow {
     height: 3em;
     margin-right: 1em;
+}
+
+.browser-icon {
+    height: 2em;
 }
