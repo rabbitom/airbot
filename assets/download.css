@@ -741,7 +741,6 @@ button:focus {
     .main>header .name .icon-warp {
         position: static;
         display: inline-block;
-        margin-left: -48px;
         max-width: 76%
     }
     .main>header .name .tip {
